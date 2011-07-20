@@ -4,7 +4,7 @@ xkb_symbols "us" {
 
     // Again, direct mapping to the unicode.
     // Unicode in, unicode out.
-    key <AA08> { [ 0x0008 ] };
+    key <AA08> { [ BackSpace ] };
     key <AA09> { [ 0x0009 ] };
     key <AA10> { [ 0x000a ] };
     key <AA11> { [ 0x000b ] };
@@ -251,7 +251,9 @@ xkb_symbols "us" {
     key <A252> { [ 0x00fc ] };
     key <A253> { [ 0x00fd ] };
     key <A254> { [ 0x00fe ] };
-    key <A255> { [ 0x00ff ] };
+    // '1' is normally tab, but that's outside the valid range
+    // of [8,255].  So instead we map tab to 255.
+    key <A255> { [ Tab ] };
     key <A256> { [ 0x0100 ] };
     key <A257> { [ 0x0101 ] };
     key <A258> { [ 0x0102 ] };
