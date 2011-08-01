@@ -9,7 +9,7 @@ xkb_symbols "us" {
     key <AA10> { [ 0x000a ] };
     key <AA11> { [ 0x000b ] };
     key <AA12> { [ 0x000c ] };
-    key <AA13> { [ 0x000d ] };
+    key <AA13> { [ Return ] };
     key <AA14> { [ 0x000e ] };
     key <AA15> { [ 0x000f ] };
     key <AA16> { [ 0x0010 ] };
